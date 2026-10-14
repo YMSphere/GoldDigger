@@ -1,4 +1,4 @@
-import { getApiPrice } from "./getApiPrice.js";
+import { getApiGoldPrice } from "./getApiGoldPrice.js";
 
 let currentGoldPrice = ''
 
@@ -6,24 +6,20 @@ function simulateGoldPriceLive() {
     const maxChangePercent = 0.001
 
     const changeDirection = (Math.random() - 0.5) * 2
-    
+
     const priceChange = currentGoldPrice * maxChangePercent * changeDirection
 
-    currentGoldPrice = Math.floor(currentGoldPrice += priceChange)
+    currentGoldPrice = currentGoldPrice += priceChange
 
-    console.log(`Just message from randomiser price function`)
-
-    return currentGoldPrice
+    return Number(currentGoldPrice).toFixed(2)
 }
 
 export async function getGoldPrice() {
     if (!currentGoldPrice) {
-        currentGoldPrice = await getApiPrice()
-        console.log(`Prise after API: ${currentGoldPrice}`)
+        currentGoldPrice = await getApiGoldPrice()
         return currentGoldPrice
     }
     else {
-        console.log(`Current gold Prise: ${currentGoldPrice}`)
         return simulateGoldPriceLive()
     }
 }

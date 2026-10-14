@@ -1,0 +1,5 @@
+Time: 2026-09-14T19:58:17.280Z, Amount paid: 2000, Price per Oz: 4284.91, Gold sold: 0.4668 
+Time: 2026-09-14T19:59:12.763Z, Amount paid: 15457, Price per Oz: 4276.81, Gold sold: 3.6141 
+Time: 2026-09-21T19:52:17.705Z, Amount paid: 1200, Price per Oz: 4333.37, Gold sold: 0.2769 
+Time: 2026-10-10T14:09:56.530Z, Amount paid: 1000, Price per Oz: 4194.74, Gold sold: 0.2384 
+Time: 2026-10-12T05:18:27.671Z, Amount paid: 1000, Price per Oz: 4185.43, Gold sold: 0.2389 
